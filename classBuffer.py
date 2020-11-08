@@ -8,7 +8,7 @@ class Buffer:
         self.buf += a
         while len(self.buf) >= 5:
             sum = 0
-            for i in range(5):
+            for _ in range(5):
                 sum += self.buf[0]
                 del self.buf[0]
             print(sum)
