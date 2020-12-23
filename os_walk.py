@@ -2,7 +2,7 @@ import os
 res = set()
 for cur_dir, dirs, files in os.walk('main'):
     for fname in files:
-        if fname[-3:] == '.py':
+        if fname.endswith('.py'):
             res.add(cur_dir)
             break
 res = '\n'.join(sorted(res))
